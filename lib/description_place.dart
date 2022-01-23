@@ -43,6 +43,7 @@ class DescriptionPlace extends StatelessWidget {
       child: Text(
         descriptionPlace,
         style: TextStyle(
+          fontFamily: "Lato",
           fontSize: 16.0,
           color: Color(0xFF56575a)
         ),
@@ -73,6 +74,7 @@ class DescriptionPlace extends StatelessWidget {
           child: Text(
             namePlace,
             style: TextStyle(
+              fontFamily: "Lato",
               fontSize: 30.0,
               fontWeight: FontWeight.w900,
             ),
