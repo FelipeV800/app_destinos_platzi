@@ -1,5 +1,9 @@
 import 'package:flutter/material.dart';
 import 'description_place.dart';
+import 'review_list.dart';
+import 'gradient_back.dart';
+
+String descriptionDummy = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse vel tempor tortor. Morbi consequat erat condimentum eros pulvinar commodo. Curabitur condimentum lacinia nisi ut consectetur";
 
 void main() {
   runApp(const MyApp());
@@ -7,6 +11,7 @@ void main() {
 
 class MyApp extends StatelessWidget {
   const MyApp({Key? key}) : super(key: key);
+
 
   // This widget is the root of your application.
   @override
@@ -26,10 +31,17 @@ class MyApp extends StatelessWidget {
         primarySwatch: Colors.blue,
       ),
       home: Scaffold (
-        appBar: AppBar(
-          title: Text("Hola Mundo"),
+        body: Stack(
+          children: [
+            ListView(
+              children: [
+                DescriptionPlace("Bahamas", 4, descriptionDummy),
+                ReviewList()
+              ],
+            ),
+            gradient_back("Popular")
+          ],
         ),
-        body: new DescriptionPlace("Bahamas", 4, "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse vel tempor tortor. Morbi consequat erat condimentum eros pulvinar commodo. Curabitur condimentum lacinia nisi ut consectetur"),
       )//const MyHomePage(title: 'Flutter Demo Home Page'),
     );
   }

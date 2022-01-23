@@ -89,6 +89,8 @@ flutter:
   # see https://flutter.dev/custom-fonts/#from-packages
   assets:
     - assets/img/people.jpg
+    - assets/img/freddy-vega.jpg
+    - assets/img/Luisito_Comunica.jpg
 
   fonts:
     - family: Lato
