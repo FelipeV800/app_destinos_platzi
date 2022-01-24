@@ -30,6 +30,7 @@ class gradient_back extends StatelessWidget {
           fontWeight: FontWeight.bold
         ),
       ),
+      alignment: Alignment(-0.9, -0.6),
     );
   }
 }

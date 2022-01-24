@@ -1,11 +1,14 @@
 import 'package:flutter/material.dart';
-import 'description_place.dart';
-import 'review_list.dart';
-import 'gradient_back.dart';
-
-String descriptionDummy = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse vel tempor tortor. Morbi consequat erat condimentum eros pulvinar commodo. Curabitur condimentum lacinia nisi ut consectetur";
+import 'package:flutter/services.dart';
+import 'platzi_trips.dart';
 
 void main() {
+
+  SystemChrome.setSystemUIOverlayStyle(SystemUiOverlayStyle(
+    statusBarColor: Colors.transparent,
+    statusBarBrightness: Brightness.light
+  ));
+
   runApp(const MyApp());
 }
 
@@ -30,19 +33,7 @@ class MyApp extends StatelessWidget {
         // is not restarted.
         primarySwatch: Colors.blue,
       ),
-      home: Scaffold (
-        body: Stack(
-          children: [
-            ListView(
-              children: [
-                DescriptionPlace("Bahamas", 4, descriptionDummy),
-                ReviewList()
-              ],
-            ),
-            gradient_back("Popular")
-          ],
-        ),
-      )//const MyHomePage(title: 'Flutter Demo Home Page'),
+      home: PlatziTrips()
     );
   }
 }

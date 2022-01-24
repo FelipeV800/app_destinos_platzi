@@ -91,6 +91,12 @@ flutter:
     - assets/img/people.jpg
     - assets/img/freddy-vega.jpg
     - assets/img/Luisito_Comunica.jpg
+    - assets/img/Barbados_beach.jpg
+    - assets/img/disneyland.jpg
+    - assets/img/muralla_china.jpg
+    - assets/img/estatua_libertad.jpg
+    - assets/img/coliseo_romano.jpg
+    - assets/img/cruce_shibuya.jpg
 
   fonts:
     - family: Lato
